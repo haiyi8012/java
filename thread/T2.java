@@ -4,6 +4,16 @@ public class T2 {
     public static void main(String[] args) {
     	Counter2 t1 = new Counter2();
     	Counter2 t2 = new Counter2();
+	/*
+	//添加执行顺序
+	Thread add = new Thread(() -> t1.add(100));
+    	Thread dec = new Thread(() -> t1.dec(100));
+
+    	add.start();
+        dec.start();
+        add.join();
+        dec.join();
+	*/
         new Thread(() -> t1.add(100)).start();
         new Thread(() -> t1.dec(100)).start();
 
