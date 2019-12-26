@@ -1,5 +1,9 @@
 ## java
 
+### InputStream 和Reader的区别
+Reader是Java的IO库提供的另一个输入流接口。和InputStream的区别是，InputStream是一个字节流，
+即以byte为单位读取，而Reader是一个字符流，即以char为单位读取
+
 ### Class对象的getResourceAsStream()可以从classpath中读取指定资源；
 根据classpath读取资源时，需要检查返回的InputStream是否为null。
 ```
