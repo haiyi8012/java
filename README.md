@@ -1,5 +1,15 @@
 ## java
 
+### Class对象的getResourceAsStream()可以从classpath中读取指定资源；
+根据classpath读取资源时，需要检查返回的InputStream是否为null。
+```
+try (InputStream input = getClass().getResourceAsStream("/default.properties")) {
+    if (input != null) {
+        // TODO:
+    }
+}
+```
+
 ### try(resource)的语法
 Java 7引入的新的try(resource)的语法，只需要编写try语句，让编译器自动为我们关闭资源。
 ```
