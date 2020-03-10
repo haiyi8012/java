@@ -1,5 +1,8 @@
 ## java
 
+### HashMap , HashSet , ArrayList
+https://github.com/wupeixuan/JDKSourceCode1.8/blob/master/src/java/util/ArrayList.java
+
 ### 使用 尖括号 <> 操作符 (The diamond operator )表示泛型, 尖括号内可以放置大写字母 （代表一个未知类型） 或问号 ? （代表若干个类型）作为参数。比如，习惯上选择以下字母代表某种类型：
 １．T 意味某种类型  
 ２．E 意味 链表、数组里的元素，如List<E> list 表示 list 里的元素。
